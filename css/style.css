@@ -1,131 +1,131 @@
 *{
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-     color: #33475b;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color: #33475b;
 }
 body{
-     font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto', sans-serif;
 }
 li{
-     display: inline-block;
-     text-decoration: none;
-     padding: 5px 10px;
-     line-height: 80px;
+      display: inline-block;
+      text-decoration: none;
+      padding: 5px 10px;
+      line-height: 80px;
 }
 /* CONTENITORE PRINCIPALE */
 .container{
-     width: 1300px;
-     height: 100%;
-     margin: auto;
+      width: 1300px;
+      height: 100%;
+      margin: auto;
 /* FLOAT */
 }
 .clearfix::after{
-     content: "";
-     display: table;
-     clear: both;
+      content: "";
+      display: table;
+      clear: both;
 }
 .float{
-     float: left;
+      float: left;
 }
 /* REGOLE LINK A */
 a{
-     color: #33475b;
-     text-decoration: none;
+      color: #33475b;
+      text-decoration: none;
 }
 a.btn{
-     padding: 5px 10px;
-     color: #ff7a59;
-     border: 1px solid #ff7a59;
-     border-radius: 5px;
+      padding: 5px 10px;
+      color: #ff7a59;
+      border: 1px solid #ff7a59;
+      border-radius: 5px;
 }
 a.btn-orange{
-     padding: 5px 10px;
-     background-color: #ff7a59;
-     border-radius: 5px;
-     color: white;
+      padding: 5px 10px;
+      background-color: #ff7a59;
+      border-radius: 5px;
+      color: white;
 }
 a.btn-orange-large{
-     padding: 20px 20px;
-     background-color: #ff7a59;
-     border-radius: 5px;
-     color: white;
+      padding: 20px 20px;
+      background-color: #ff7a59;
+      border-radius: 5px;
+      color: white;
 }
 /* HEADER */
 header{
-     width: 100%;
+      width: 100%;
 }
 /* SEZIONE LINGUA, CONTATTI E LOGIN */
 header section.user-row{
-     width: 100%;
-     background-color: white;
-     position: fixed;
-     top: 0;
-     left: 0;
-     z-index: 10;
+      width: 100%;
+      background-color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
 }
 header section.user-row .user-contact{
-     width: 50%;
-     line-height: 80px;
+      width: 50%;
+      line-height: 80px;
 }
 header section.user-row .user-contact .lenguage{
-     display: inline-block;
-     padding-right: 15px;
+      display: inline-block;
+      padding-right: 15px;
 }
 header section.user-row .user-contact .contact{
-     display: inline-block;
-     padding: 0 15px;
+      display: inline-block;
+      padding: 0 15px;
 }
 header section.user-row .user-log{
-     width: 50%;
-     line-height: 80px;
-     text-align: right;
+      width: 50%;
+      line-height: 80px;
+      text-align: right;
 }
 header section.user-row .user-log i:first-child{
-     color: #00a8c2;
+      color: #00a8c2;
 }
 /* SEZIONE LOGO E MENU DEL SITO */
 header section.site-row{
-     width: 100%;
-     background-color: white;
-     margin-top: 80px;
+      width: 100%;
+      background-color: white;
+      margin-top: 80px;
 }
 header section.site-row .site-logo{
-     width: 50%;
+      width: 50%;
 }
 header section.site-row .site-logo img{
-     margin-top: 25px;
+      margin-top: 25px;
 }
 header section.site-row .site-menu{
-     width: 50%;
-     text-align: right;
+      width: 50%;
+      text-align: right;
 }
 /* JUMBOTRON */
 header .jumbotron{
-     width: 100%;
-     height: calc(950px - 160px);
-     background-image: url('../img/jumbotron.png');
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-position: center;
-     position: relative;
+      width: 100%;
+      height: calc(950px - 160px);
+      background-image: url('../img/jumbotron.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
 }
 /* Box dentro Jumbotron */
 header section.jumbotron .container .jumbotron-content{
-     width: 50%;
+      width: 50%;
 }
 /* Contenuto Jumbotron */
 header section.jumbotron .container .jumbotron-content,h1{
-     padding-top: 50px;
-     font-size: 60px;
+      padding-top: 50px;
+      font-size: 60px;
 }
 header section.jumbotron .container .jumbotron-content,p{
-     padding: 35px 0;
-     font-size: 18px;
+      padding: 35px 0;
+      font-size: 18px;
 }
 header section.jumbotron .container .jumbotron-content p.little-p{
-     font-size: 12px;
-     margin-top: 10px;
+      font-size: 12px;
+      margin-top: 10px;
 }
 header .line-colored{
       width: 100%;
@@ -139,15 +139,16 @@ header .line-colored{
 }
 /* MAIN */
 main{
-  width: 100%;
-  height: 800px;
-  background-color: #f5f8fa;
+      width: 100%;
+      height: 800px;
+      background-color: #f5f8fa;
 }
+/* Prima sezione trasparente con CUBO */
 main section.top-section{
-  width: 100%;
-  text-align: center;
+      width: 100%;
+      text-align: center;
 }
 main section.top-section img{
-  margin-top: 60px;
-  width: 20%;
+      margin-top: 60px;
+      width: 20%;
 }
