@@ -54,6 +54,7 @@ a.btn-orange-large{
 /* HEADER */
 header{
       width: 100%;
+      position: relative;
 }
 /* SEZIONE LINGUA, CONTATTI E LOGIN */
 header section.user-row{
@@ -108,7 +109,6 @@ header .jumbotron{
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
-      position: relative;
 }
 /* Box dentro Jumbotron */
 header section.jumbotron .container .jumbotron-content{
@@ -129,7 +129,7 @@ header section.jumbotron .container .jumbotron-content p.little-p{
 }
 header .line-colored{
       width: 100%;
-      height: 80px;
+      height: 40px;
       background-color: #98dae8;
       border-top: 4px solid #33475b;
       border-bottom: 4px solid #33475b;
