@@ -2,6 +2,7 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
+     color: #33475b;
 }
 body{
      font-family: 'Roboto', sans-serif;
@@ -29,7 +30,7 @@ li{
 }
 /* REGOLE LINK A */
 a{
-     color: black;
+     color: #33475b;
      text-decoration: none;
 }
 a.btn{
@@ -139,6 +140,14 @@ header .line-colored{
 /* MAIN */
 main{
   width: 100%;
-  height: 400px;
-  background-color: lightgrey;
+  height: 800px;
+  background-color: #f5f8fa;
+}
+main section.top-section{
+  width: 100%;
+  text-align: center;
+}
+main section.top-section img{
+  margin-top: 60px;
+  width: 20%;
 }
