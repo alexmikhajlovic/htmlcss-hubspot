@@ -15,7 +15,7 @@ li{
 }
 /* CONTENITORE PRINCIPALE */
 .container{
-      width: 1300px;
+      width: 75%;
       height: 100%;
       margin: auto;
 /* FLOAT */
@@ -35,9 +35,13 @@ a{
 }
 a.btn{
       padding: 5px 10px;
+      background-color: white;
       color: #ff7a59;
       border: 1px solid #ff7a59;
       border-radius: 5px;
+}
+a.btn:hover{
+  text-shadow: 1px 1px 2px black, 0 0 25px #ff7a59, 0 0 5px #ff7a59;
 }
 a.btn-orange{
       padding: 5px 10px;
@@ -51,19 +55,19 @@ a.btn-orange-large{
       border-radius: 5px;
       color: white;
 }
+a.btn-orange-large:hover{
+  padding: 30px 30px;
+}
 /* HEADER */
 header{
       width: 100%;
-      position: relative;
+      display: unset;
 }
 /* SEZIONE LINGUA, CONTATTI E LOGIN */
 header section.user-row{
       width: 100%;
-      background-color: white;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 10;
+      background-color: #f5f8fa;
+      border-bottom: 1px solid #33475b;
 }
 header section.user-row .user-contact{
       width: 50%;
@@ -85,30 +89,52 @@ header section.user-row .user-log{
 header section.user-row .user-log i:first-child{
       color: #00a8c2;
 }
+header section.user-row .user-log i:first-child:hover{
+      font-size: 20px;
+}
 /* SEZIONE LOGO E MENU DEL SITO */
 header section.site-row{
       width: 100%;
+      position: sticky;
+      position: -webkit- sticky;
+      z-index: 10;
+      top: 0;
       background-color: white;
-      margin-top: 80px;
 }
 header section.site-row .site-logo{
       width: 50%;
 }
 header section.site-row .site-logo img{
-      margin-top: 25px;
+      margin-top: 35px;
 }
 header section.site-row .site-menu{
       width: 50%;
       text-align: right;
 }
+
 /* JUMBOTRON */
 header .jumbotron{
       width: 100%;
       height: calc(950px - 160px);
       background-image: url('../img/jumbotron.png');
-      background-size: cover;
+      background-color: #fff4ee;
+      background-size: 90%;
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: right;
+      box-shadow: inset 0 3px 8px rgba(0,0,0,0.2);
+      position: relative;
+}
+header .jumbotron:before{
+      width: 100%;
+      height: 70px;
+      background-color: #98dae8;
+      border-top: 4px solid #33475b;
+      border-bottom: 4px solid #33475b;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: "";
+      display: block;
 }
 /* Box dentro Jumbotron */
 header section.jumbotron .container .jumbotron-content{
@@ -117,7 +143,7 @@ header section.jumbotron .container .jumbotron-content{
 /* Contenuto Jumbotron */
 header section.jumbotron .container .jumbotron-content,h1{
       padding-top: 50px;
-      font-size: 60px;
+      font-size: 70px;
 }
 header section.jumbotron .container .jumbotron-content,p{
       padding: 35px 0;
@@ -127,20 +153,11 @@ header section.jumbotron .container .jumbotron-content p.little-p{
       font-size: 12px;
       margin-top: 10px;
 }
-header .line-colored{
-      width: 100%;
-      height: 40px;
-      background-color: #98dae8;
-      border-top: 4px solid #33475b;
-      border-bottom: 4px solid #33475b;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-}
+
 /* MAIN */
 main{
       width: 100%;
-      height: 800px;
+      height: 2000px;
       background-color: #f5f8fa;
 }
 /* Prima sezione trasparente con CUBO */
@@ -152,3 +169,65 @@ main section.top-section img{
       margin-top: 60px;
       width: 20%;
 }
+/* SEZIONE CRM */
+main section.crm{
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+}
+/* Sezione sinistra con img e titolo */
+main section.crm .crm-left{
+  width: 30%;
+  height: 100%;
+  text-align: center;
+  display: block;
+  position: relative;
+  background-color: white;
+}
+/* Blocco img */
+main section.crm .crm-left .crm-img{
+  width: 45%;
+  height: 150px;
+  margin: auto;
+  margin-top: 60px;
+  background-image: url("https://www.hubspot.com/hubfs/assets/hubspot.com/_style-guide/sword-sprocket/CRM-Illustration.svg");
+  background-repeat: no-repeat;
+}
+main section.crm .crm-left a{
+  position: absolute;
+  left: 50%;
+  bottom:25%;
+  transform: translateX(-50%);
+}
+/* Sezione destra */
+main section.crm .crm-right{
+  width: 70%;
+  height: 100%;
+  background-color: white;
+}
+main section.crm .crm-right-content{
+  width: 65%;
+}
+main section.crm .crm-right-content h3{
+  margin-top: 50px;
+  font-size: 20px;
+}
+main section.crm .crm-right-content p{
+  line-height: 1.6;
+  font-size: 16px;
+}
+main section.crm .crm-right-content h4{
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+main section.crm .crm-right-content li{
+  padding-right: 10px;
+  padding-left: 0;
+  margin-top: 35px;
+}
+main section.crm .crm-right-content li i{
+  padding-right: 7px;
+  color: #ff7a59
+}
+/* Fine CRM */
