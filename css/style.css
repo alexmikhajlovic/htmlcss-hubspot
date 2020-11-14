@@ -16,7 +16,6 @@ li{
 /* CONTENITORE PRINCIPALE */
 .container{
       width: 75%;
-      height: 100%;
       margin: auto;
 /* FLOAT */
 }
@@ -28,7 +27,7 @@ li{
 .float{
       float: left;
 }
-/* REGOLE LINK A */
+/* REGOLE LINK A + TRANSITION */
 a{
       color: #33475b;
       text-decoration: none;
@@ -39,24 +38,33 @@ a.btn{
       color: #ff7a59;
       border: 1px solid #ff7a59;
       border-radius: 5px;
+      transition: 1s;
 }
 a.btn:hover{
-  text-shadow: 1px 1px 2px black, 0 0 25px #ff7a59, 0 0 5px #ff7a59;
+      background-color: #ff7a591f;
+      padding: 10px 20px;
+      
 }
 a.btn-orange{
       padding: 5px 10px;
       background-color: #ff7a59;
       border-radius: 5px;
       color: white;
+      transition: 1s;
+}
+a.btn-orange:hover{
+      padding: 10px 20px;
 }
 a.btn-orange-large{
+      font-size: 20px;
       padding: 20px 20px;
       background-color: #ff7a59;
       border-radius: 5px;
       color: white;
+      transition: 0.5s;
 }
 a.btn-orange-large:hover{
-  padding: 30px 30px;
+      padding: 30px 30px;
 }
 /* HEADER */
 header{
@@ -92,6 +100,7 @@ header section.user-row .user-log{
 }
 header section.user-row .user-log i:first-child{
       color: #00a8c2;
+      transition: 1s;
 }
 header section.user-row .user-log i:first-child:hover{
       font-size: 20px;
@@ -104,7 +113,7 @@ header section.site-row .site-logo{
       width: 50%;
 }
 header section.site-row .site-logo img{
-      margin-top: 35px;
+      margin: 28px 0;
 }
 header section.site-row .site-menu{
       width: 50%;
@@ -140,41 +149,48 @@ header section.jumbotron .container .jumbotron-content{
       width: 50%;
 }
 /* Contenuto Jumbotron */
-header section.jumbotron .container .jumbotron-content,h1{
-      padding-top: 50px;
+header section.jumbotron .container .jumbotron-content h1{
+      padding-top: 80px;
       font-size: 70px;
 }
-header section.jumbotron .container .jumbotron-content,p{
-      padding: 35px 0;
+header section.jumbotron .container .jumbotron-content p{
+      padding: 40px 0;
       font-size: 18px;
 }
 header section.jumbotron .container .jumbotron-content p.little-p{
       font-size: 12px;
-      margin-top: 10px;
+      margin: 40px 0;
 }
 
 /* MAIN */
 main{
       width: 100%;
-      height: 2000px;
+      height: 3000px;
       background-color: #f5f8fa;
 }
 /* Prima sezione trasparente con CUBO */
 main section.top-section{
-      width: 100%;
+      width: 80%;
       text-align: center;
+      margin: auto;
 }
 main section.top-section img{
       margin-top: 60px;
       width: 20%;
+}
+main section.top-section h2{
+      margin-bottom: 40px;
+}
+main section.top-section p{
+      margin-bottom: 40px;
 }
 /* SEZIONE CRM */
 main section.crm{
       width: 100%;
       height: 400px;
       background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      box-shadow: 0 0px 5px 0 rgba(50, 73, 91, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.1);
 }
 /* Sezione sinistra con img e titolo */
 main section.crm .crm-left{
@@ -194,6 +210,7 @@ main section.crm .crm-left .crm-img{
 /* Sezione destra */
 main section.crm .crm-right{
       width: 70%;
+      margin-top: 40px;
 }
 main section.crm .crm-right-content{
       width: 65%;
@@ -203,6 +220,8 @@ main section.crm .crm-right-content h3{
       font-size: 20px;
 }
 main section.crm .crm-right-content p{
+      margin-top: 35px;
+      margin-bottom: 25px;
       line-height: 1.6;
       font-size: 16px;
 }
@@ -213,7 +232,6 @@ main section.crm .crm-right-content h4{
 main section.crm .crm-right-content li{
       padding-right: 10px;
       padding-left: 0;
-      margin-top: 35px;
 }
 main section.crm .crm-right-content li i{
       padding-right: 7px;
@@ -226,11 +244,16 @@ main section.services{
       margin: 50px 0;
 }
 main section.services .service{
-      width: 33.33333%;
+      width: calc(100% / 3 - 40px);
+      margin: auto;
       text-align: center;
       background-color: white;
       border-radius: 10px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0px 5px 0 rgba(50, 73, 91, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+main section.services .cx{
+      margin: 0 60px;
 }
 main section.services .service .service-info-top{
       width: 80%;
@@ -248,8 +271,12 @@ main section.services .service .service-info-top h3{
       font-size: 25px;
 }
 main section.services .service .service-info-top p{
-      margin-bottom: 40px;
-      font-size: 15px;
+      width: 90%;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 60px;
+      font-size: 18px;
+      line-height: 1.6;
 }
 
 main section.services .service .service-info-bottom{
@@ -279,9 +306,85 @@ main section.services .service .service-info-bottom a{
       line-height: 90px;
 }
 
-
-
-
+/* SEZIONE DATI E STATISTICHE */
+main section.analitycs{
+      width: 100%;
+      background: linear-gradient(45deg, #00a4bd, #00bda5);  
+      padding-bottom: 60px; 
+}
+main section.analitycs .text-content{
+      width: 90%;
+      margin: auto;
+      padding: 30px 0;
+      text-align: center;
+      font-size: 25px;
+}
+main section.analitycs .text-content h2{
+      color: #f5f8fa;
+}
+main section.analitycs p{
+      color: #f5f8fa;
+      font-size: 20px;
+      text-align: center;
+      font-size: 18px;
+}
+main section.analitycs .dates{
+      width: 100%;
+      margin-top: 60px;
+}
+main section.analitycs .dates .dates-content{
+      width: calc(100% / 4);
+      height: 200px;
+      text-align: center;
+      position: relative;
+}
+main section.analitycs .dates .dates-content img{
+      height: 20%;
+      position: absolute;
+      left: 50%;
+      top: 8%;
+      transform: translateX(-50%);
+}
+main section.analitycs .dates .dates-content h5{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      font-size: 50px;
+      padding: 10px 0;
+      color: white;
+}
+main section.analitycs .dates .dates-content p{
+      position: absolute;
+      left: 50%;
+      bottom: 15%;
+      transform: translateX(-50%);
+      font-size: 15px;
+}
+#dates-one{
+      border-bottom: 1px solid white;
+      border-right: 1px solid white;
+}
+#dates-two{
+      border-bottom: 1px solid white;
+      border-right: 1px solid white;
+}
+#dates-three{
+      border-bottom: 1px solid white;
+      border-right: 1px solid white;
+}
+#dates-four{
+      border-bottom: 1px solid white;
+}
+#dates-five{
+      border-right: 1px solid white;
+}
+#dates-six{
+      border-right: 1px solid white;
+}
+#dates-seven{
+      border-right: 1px solid white;
+}
 
 
 
