@@ -81,6 +81,7 @@ header section.user-row{
       top: 0;
       left: 0;
 }
+/* Lingua e contatti */
 header section.user-row .user-contact{
       width: 50%;
       line-height: 80px;
@@ -93,6 +94,7 @@ header section.user-row .user-contact .contact{
       display: inline-block;
       padding: 0 15px;
 }
+/* Login utente */
 header section.user-row .user-log{
       width: 50%;
       line-height: 80px;
@@ -109,17 +111,18 @@ header section.user-row .user-log i:first-child:hover{
 header section.site-row{
       width: 100%;
 }
+/* Logo azienda */
 header section.site-row .site-logo{
       width: 50%;
 }
 header section.site-row .site-logo img{
       margin: 28px 0;
 }
+/* Menu principale */
 header section.site-row .site-menu{
       width: 50%;
       text-align: right;
 }
-
 /* JUMBOTRON */
 header .jumbotron{
       width: 100%;
@@ -145,22 +148,23 @@ header .jumbotron:before{
       display: block;
 }
 /* Box dentro Jumbotron */
-header section.jumbotron .container .jumbotron-content{
+header section.jumbotron .jumbotron-content{
       width: 50%;
 }
 /* Contenuto Jumbotron */
-header section.jumbotron .container .jumbotron-content h1{
+header section.jumbotron .jumbotron-content h1{
       padding-top: 80px;
       font-size: 70px;
 }
-header section.jumbotron .container .jumbotron-content p{
+header section.jumbotron .jumbotron-content p{
       padding: 40px 0;
       font-size: 18px;
 }
-header section.jumbotron .container .jumbotron-content p.little-p{
+header section.jumbotron .jumbotron-content p.little-p{
       font-size: 12px;
       margin: 40px 0;
 }
+/* Fine HEADER */
 
 /* MAIN */
 main{
@@ -192,14 +196,14 @@ main section.crm{
       border-radius: 5px;
       box-shadow: 0 0px 5px 0 rgba(50, 73, 91, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.1);
 }
-/* Sezione sinistra con img e titolo */
+/* Parte sinistra CRM con img e titolo */
 main section.crm .crm-left{
       width: 30%;
       text-align: center;
       display: block;
       position: relative;
 }
-/* Blocco img */
+/* Blocco img CRM */
 main section.crm .crm-left .crm-img{
       width: 45%;
       height: 150px;
@@ -207,7 +211,7 @@ main section.crm .crm-left .crm-img{
       background-image: url("https://www.hubspot.com/hubfs/assets/hubspot.com/_style-guide/sword-sprocket/CRM-Illustration.svg");
       background-repeat: no-repeat;
 }
-/* Sezione destra */
+/* Parte destra CRM*/
 main section.crm .crm-right{
       width: 70%;
       margin-top: 40px;
@@ -251,16 +255,16 @@ main section.services .service{
       border-radius: 10px;
       box-shadow: 0 0px 5px 0 rgba(50, 73, 91, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.1);
 }
-
+/* Box centrale */
 main section.services .cx{
       margin: 0 60px;
 }
+/* Parte superiore */
 main section.services .service .service-info-top{
       width: 80%;
       margin: auto;
       margin-top: 20px;
       border-bottom: 2px solid grey;
-
 }
 main section.services .service .service-info-top img{
       height: 150px;
@@ -278,7 +282,7 @@ main section.services .service .service-info-top p{
       font-size: 18px;
       line-height: 1.6;
 }
-
+/* Parte inferirore */
 main section.services .service .service-info-bottom{
       width: 80%;
       margin: auto;
@@ -312,8 +316,9 @@ main section.analitycs{
       background: linear-gradient(45deg, #00a4bd, #00bda5);  
       padding-bottom: 60px; 
 }
+/* Titolo e paragrafo */
 main section.analitycs .text-content{
-      width: 90%;
+      width: 95%;
       margin: auto;
       padding: 30px 0;
       text-align: center;
@@ -321,6 +326,7 @@ main section.analitycs .text-content{
 }
 main section.analitycs .text-content h2{
       color: #f5f8fa;
+      font-size: 40px;
 }
 main section.analitycs p{
       color: #f5f8fa;
@@ -328,6 +334,7 @@ main section.analitycs p{
       text-align: center;
       font-size: 18px;
 }
+/* Box con dati flottati */
 main section.analitycs .dates{
       width: 100%;
       margin-top: 60px;
@@ -350,7 +357,7 @@ main section.analitycs .dates .dates-content h5{
       left: 50%;
       top: 50%;
       transform: translate(-50%,-50%);
-      font-size: 50px;
+      font-size: 40px;
       padding: 10px 0;
       color: white;
 }
@@ -361,6 +368,7 @@ main section.analitycs .dates .dates-content p{
       transform: translateX(-50%);
       font-size: 15px;
 }
+/* ID box flottati */
 #dates-one{
       border-bottom: 1px solid white;
       border-right: 1px solid white;
@@ -385,18 +393,87 @@ main section.analitycs .dates .dates-content p{
 #dates-seven{
       border-right: 1px solid white;
 }
+/* SEZIONE CUSTOMERS */
+main section.customers{
+      width: 100%;
+      padding: 40px 0;
+}
+main section.customers .customer-container{
+      width: 65%;
+      margin: auto;
+      height: 250px;
+}
+/* Box testo */
+main section.customers .customer-container .customer-info{
+      width: 20%;
+}
+main section.customers .customer-container .customer-info h5{
+      font-size: 50px;
+      margin-bottom: 25px;
+}
+main section.customers .customer-container .customer-info p{
+      font-size: 20px;
+      line-height: 1.6;
+}
+/* Parte LOGHI */
+main section.customers .customer-container .customer-logos{
+      width: 80%;
+      height: 65%;
+}
+main section.customers .customer-container .customer-logos .container-logos{
+      width: 100%;
+      height: 90%;
+}
+main section.customers .customer-container .customer-logos .container-logos .customer-logo{
+      width: calc(100% / 4);
+      height: 50%;
+      text-align: center;
+}
+main section.customers .customer-container .customer-logos .container-logos .customer-logo img{
+      height: 60%;
+}
 
+/* SEZIONE STARTER */
+main section.starter{
+      width: 100%;
+      background-color: #f5f8fa;
+}
+/* Parte tiolo e descrizione */
+main section.starter .starter-text{
+      width: 30%;
+}
+main section.starter .starter-text h4{
+      font-size: 30px;
+}
+main section.starter .starter-text p.big-p{
+      padding-top: 30px;
+      padding-bottom: 50px;
+      font-size: 14px;
+      line-height: 1.6;
+}
+main section.starter .starter-text a{
+      font-size: 15px;
+}
+main section.starter .starter-text p.little-p{
+      padding-top: 60px;
+      font-size: 11px;
+}
 
-
-
-
-
-
-
-
-
-
-
+/* Parte con foto */
+main section.starter .starter-photo{
+      width: 70%;
+      height: 400px;
+      text-align: right;
+}
+main section.starter .starter-photo img{
+      height: 80%;
+      border-radius: 50%;
+      transition: width 2s, height 2s, transform 2s;
+}
+main section.starter .starter-photo img:hover{
+      height: 100%;
+      transform: rotate(360deg);
+}
 
 
 
