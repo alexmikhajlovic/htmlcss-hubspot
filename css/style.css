@@ -45,6 +45,12 @@ a.btn:hover{
       padding: 10px 20px;
       
 }
+a.btn-white{
+      color: #2d3e50;
+      border-radius: 5px;
+      padding: 5px 10px;
+      background-color: rgba(255, 255, 255, 0.5);
+}
 a.btn-orange{
       padding: 5px 10px;
       background-color: #ff7a59;
@@ -242,6 +248,7 @@ main section.crm .crm-right-content li i{
       color: #ff7a59;
 }
 /* FINE CRM */
+
 /* SEZIONE SERVICES */
 main section.services{
       width: 100%;
@@ -361,6 +368,12 @@ main section.analitycs .dates .dates-content h5{
       padding: 10px 0;
       color: white;
 }
+main section.analitycs .dates .dates-content h5::after{
+      content: "\002B";
+      padding-left: 5px;
+      font-size: 25px;
+      vertical-align: middle;
+}
 main section.analitycs .dates .dates-content p{
       position: absolute;
       left: 50%;
@@ -466,43 +479,90 @@ main section.starter .starter-photo{
       text-align: right;
 }
 main section.starter .starter-photo img{
-      height: 80%;
+      height: 75%;
       border-radius: 50%;
       transition: width 2s, height 2s, transform 2s;
 }
 main section.starter .starter-photo img:hover{
-      height: 100%;
+      height: 85%;
       transform: rotate(360deg);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Fine MAIN */
+footer{
+      width: 100%;
+      height: 600px;
+      background-color: #2d3e50;
+}
+/* SEZIONE LINK TOP */
+footer section.footer-top{
+      width: 100%;
+}
+footer section.footer-top .menu-links{
+      width: 100%;
+}
+footer section.footer-top .menu-links .link-inmenu{
+      width: calc(100% / 4);
+}
+/* Contenuto */
+footer section.footer-top .menu-links .link-inmenu h5{ 
+      font-size: 20px;
+      color: white;
+      margin: 30px 0;
+}
+footer section.footer-top .menu-links .link-inmenu li{
+      display: block;
+      line-height: 1.6;
+      list-style: none;
+      font-size: 15px;
+}
+footer section.footer-top .menu-links .link-inmenu li a{
+      color: white;
+}
+/* Incone social */
+footer section.footer-top .menu-links .link-inmenu ul.socials li{
+      display: inline;
+      font-size: 19px;
+}
+footer section.footer-top .menu-links .link-inmenu ul.socials li i{
+      color: white;
+      padding-top: 15px;
+}
+/* SEZIONE LINGUE */
+footer section.lenguage{
+      text-align: center;
+}
+footer section.lenguage .container{
+      border-bottom: 2px solid white;
+}
+footer section.lenguage li a{
+      color: white;
+      font-size: 12px;
+}
+/* SEZIONE COPYRIGHT BOTTOM*/
+footer section.footer-bottom{
+      width: 100%;
+      margin-top: 20px;
+}
+footer section.footer-bottom .copyright{
+      width: 100%;
+}
+/* Parte con logo */
+footer section.footer-bottom .copyright .copyright-logo{
+      width: 50%;
+}
+footer section.footer-bottom .copyright .copyright-logo p{
+      color: lightgray;
+      font-size: 10px;
+}
+/* Parte termini e condizioni */
+footer section.footer-bottom .copyright .copyright-terms{
+      width: 50%;
+      text-align: right;
+}
+footer section.footer-bottom .copyright .copyright-terms ul li{
+      padding: 0 5px;
+}
+footer section.footer-bottom .copyright .copyright-terms ul li a{
+      color: white;
+}
 /* fine */
