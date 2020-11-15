@@ -488,6 +488,8 @@ main section.starter .starter-photo img:hover{
       transform: rotate(360deg);
 }
 /* Fine MAIN */
+
+/* FOOTER */
 footer{
       width: 100%;
       height: 600px;
@@ -564,5 +566,6 @@ footer section.footer-bottom .copyright .copyright-terms ul li{
 }
 footer section.footer-bottom .copyright .copyright-terms ul li a{
       color: white;
+      font-size: 15px;
 }
-/* fine */
+/* Fine FOOTER */
