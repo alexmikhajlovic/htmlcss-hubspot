@@ -572,6 +572,7 @@ footer section.footer-bottom .copyright .copyright-terms ul li a{
       font-size: 15px;
 }
 /* Fine FOOTER */
+
 /* CHAT FIXED */
 .fixed-chat .chat{
       width: 250px;
@@ -582,6 +583,7 @@ footer section.footer-bottom .copyright .copyright-terms ul li a{
       bottom: 100px;
       right: 15px;
       z-index: 4;
+      display: none;
 }
 .fixed-chat .chat p{
       padding: 25px 10px;
@@ -598,6 +600,9 @@ footer section.footer-bottom .copyright .copyright-terms ul li a{
       right: 15px;
       bottom: 15px;
       z-index: 5;
+}
+.fixed-chat .chat-button:hover + .chat{
+      display: block;
 }
 .fixed-chat .chat-button i{
       color: white;
