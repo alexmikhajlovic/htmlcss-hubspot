@@ -237,7 +237,11 @@ main section.crm .crm-right-content p{
 }
 main section.crm .crm-right-content h4{
       text-transform: uppercase;
-      padding-top: 10px;
+}
+main section.crm .crm-right-content hr{
+      margin-top: 7px;
+      margin-left: 45px;
+      width: 400px;
 }
 main section.crm .crm-right-content li{
       padding-right: 10px;
